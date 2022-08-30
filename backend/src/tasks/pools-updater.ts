@@ -13,7 +13,7 @@ import * as https from 'https';
 class PoolsUpdater {
   lastRun: number = 0;
   currentSha: any = undefined;
-  poolsUrl: string = 'https://raw.githubusercontent.com/mempool/mining-pools/master/pools.json';
+  poolsUrl: string = config.MEMPOOL.POOLS_URL
   treeUrl: string = 'https://api.github.com/repos/mempool/mining-pools/git/trees/master';
 
   constructor() {

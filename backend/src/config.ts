@@ -24,6 +24,7 @@ interface IConfig {
     USER_AGENT: string;
     STDOUT_LOG_MIN_PRIORITY: 'emerg' | 'alert' | 'crit' | 'err' | 'warn' | 'notice' | 'info' | 'debug';
     AUTOMATIC_BLOCK_REINDEXING: boolean;
+    POOLS_URL: string;
   };
   ESPLORA: {
     REST_API_URL: string;
@@ -115,6 +116,7 @@ const defaults: IConfig = {
     'USER_AGENT': 'mempool',
     'STDOUT_LOG_MIN_PRIORITY': 'debug',
     'AUTOMATIC_BLOCK_REINDEXING': false,
+    'POOLS_URL': 'https://raw.githubusercontent.com/mempool/mining-pools/master/pools.json',
   },
   'ESPLORA': {
     'REST_API_URL': 'http://127.0.0.1:3000',
