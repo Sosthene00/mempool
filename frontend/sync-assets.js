@@ -84,5 +84,5 @@ console.log('Downloading testnet assets');
 download(PATH + 'assets-testnet.json', testnetAssetsJsonUrl);
 console.log('Downloading testnet assets minimal');
 download(PATH + 'assets-testnet.minimal.json', testnetAssetsMinimalJsonUrl);
-console.log('Downloading mining pool logos');
-downloadMiningPoolLogos();
+// console.log('Downloading mining pool logos');
+// downloadMiningPoolLogos();
